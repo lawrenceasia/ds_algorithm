@@ -32,6 +32,7 @@ listnode* reverse_slist(listnode *head){
     return newhead;
 }
 
+//revers slist: by using 3 pointer
 listnode* reverse_slist_3point(listnode *head){
     if(NULL == head || head -> next == NULL)//head is null ; or head has only one node
         return head;
