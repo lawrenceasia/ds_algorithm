@@ -5,7 +5,7 @@
  *  
  **/
 
-#include "slist.h"
+#include "include/slist.h"
 
 bool is_slistcycle(const listnode *head){
     bool biscycle = false;

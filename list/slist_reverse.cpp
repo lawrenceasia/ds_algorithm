@@ -7,7 +7,7 @@
  **/
 #include <cstdlib>
 #include <cstdio>
-#include "slist.h"
+#include "include/slist.h"
 
 //reverse slist: by using insert node at head
 listnode* reverse_slist(listnode *head){

@@ -8,7 +8,22 @@
 
 #include <cstdlib>
 #include <cstdio>
-#include "slist.h"
+#include "include/slist.h"
+
+//get slist length
+//head node not exist
+int get_slistlength(const listnode* head){
+    int length = 0;
+    if(head == NULL)
+        return length;
+    const listnode *pcur = head;
+    while(pcur != NULL){
+        pcur = pcur -> next;
+        length ++;
+    }
+
+    return length;
+}
 
 //create single link list, with head node not exist.
 listnode* create_init_slist(const int nodeinitval, const int listsize){

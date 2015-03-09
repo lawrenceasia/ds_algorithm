@@ -11,11 +11,14 @@
 #define  __SLIST_H_
 #include <cstdlib>
 #include <cstdio>
+#include <cassert>
 
 typedef struct taglistnode{
     int data;
     struct taglistnode *next;
 }listnode;
+
+int get_slistlength(const listnode* head);
 
 int print_slist(const listnode *head);
 
